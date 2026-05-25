@@ -14,7 +14,7 @@ document.addEventListener("scroll", () => {
 document.querySelectorAll(".btn").forEach(btn => {
   btn.addEventListener("click", e => {
     e.preventDefault();
-    alert("Gracias por tu interés. Envía un mensaje a WhatsApp.");
+    alert("Gracias por tu interés.  Envía un mensaje a WhatsApp.");
   });
 });
 
