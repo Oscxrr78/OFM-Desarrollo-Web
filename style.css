@@ -1,0 +1,157 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+    background: #111;
+  color: #eee;
+}
+
+.hero {
+   background-image: url('foto.png');
+   background-size: cover;
+    background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+    text-align: left;
+  font-size: 3em;
+  color: #00aaff;
+}
+.hero p {
+    text-align: left;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.paquetes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.card h2 {
+  color: #00aaff;
+}
+.precio {
+  font-size: 1.8em;
+  color: #fff;
+  margin: 15px 0;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card ul li {
+  margin: 10px 0;
+  color: #ccc;
+}
+.btn {
+  display: inline-block;
+  background: #00aaff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #0088cc;
+}
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contacto {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contacto h2 {
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-contact:hover {
+  transform: translateY(-5px);
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.facebook {
+  background: #1877F2;
+}
+
+/* Estilos generales (para pantallas grandes) */
+.paquetes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+}
+
+/* 📱 Ajustes para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+  .paquetes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;   /* ocupa casi todo el ancho del teléfono */
+  }
+  .hero h1 {
+    font-size: 2em; /* reduce el tamaño del título */
+  }
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/* 📱📲 Ajustes para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card {
+    width: 45%;   /* dos tarjetas por fila en tablets */
+  }
+}
